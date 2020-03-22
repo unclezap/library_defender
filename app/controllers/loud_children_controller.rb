@@ -1,0 +1,2 @@
+class LoudChildrenController < ApplicationController
+end

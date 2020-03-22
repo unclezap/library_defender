@@ -1,0 +1,2 @@
+class JuniorLibrarian < Defender
+end

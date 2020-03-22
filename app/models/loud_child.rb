@@ -1,0 +1,2 @@
+class LoudChild < Monster
+end
