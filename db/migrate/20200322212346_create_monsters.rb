@@ -4,6 +4,7 @@ class CreateMonsters < ActiveRecord::Migration[6.0]
       t.integer :health
       t.integer :attack_damage
       t.string :img
+      t.integer :level_id
 
       t.timestamps
     end
