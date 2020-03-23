@@ -8,4 +8,5 @@ class DefendersController < ApplicationController
         defender = Defender.find_by(id: params[:id])
         render json: 'defender'
     end
+    
 end
