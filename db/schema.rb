@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2020_03_22_213936) do
     t.integer "cost"
     t.integer "attack_damage"
     t.string "img"
+    t.integer "level_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -56,6 +57,7 @@ ActiveRecord::Schema.define(version: 2020_03_22_213936) do
     t.integer "health"
     t.integer "attack_damage"
     t.string "img"
+    t.integer "level_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
