@@ -10,4 +10,5 @@ class GamesController < ApplicationController
     end
     i am interfering with the game
     i am a bug
+    whats up
 end
