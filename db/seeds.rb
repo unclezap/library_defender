@@ -21,3 +21,7 @@ levelOne.monsters << newMonster
 
 newDefender = JuniorLibrarian.create(attack_damage: 30, cost: 50)
 levelOne.defenders << newDefender
+
+zeb = User.create(name: "Zeb")
+
+david = User.create(name: "David")
