@@ -9,4 +9,10 @@ class UsersController < ApplicationController
         user = User.find_by(id: params[:id])
         render json: user
     end
+
+    def create
+        new_user = User.create(name: params[:newUser][:name])
+        render json: new_user
+    end
+
 end

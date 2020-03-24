@@ -25,3 +25,5 @@ levelOne.defenders << newDefender
 zeb = User.create(name: "Zeb")
 
 david = User.create(name: "David")
+
+john = User.create(name: "John")
