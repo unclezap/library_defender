@@ -9,4 +9,10 @@ class GamesController < ApplicationController
         render json: game
     end
    
+    def create
+        new_game = Game.create
+        this_user = User.find_by(id: params[:thisUser][:id])
+        this_user.games << new_game
+        render json: new_game
+    end
 end
