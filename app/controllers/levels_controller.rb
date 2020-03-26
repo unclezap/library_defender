@@ -6,6 +6,6 @@ class LevelsController < ApplicationController
     
     def show
         level = Level.find_by(id: params[:id])
-        render json: level
+        render json: level, include: [:monsters]
     end
 end
