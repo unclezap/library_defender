@@ -1,0 +1,2 @@
+class AngryLibrarian < Defender
+end
