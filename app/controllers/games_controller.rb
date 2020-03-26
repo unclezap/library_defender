@@ -6,7 +6,7 @@ class GamesController < ApplicationController
     
     def show
         game = Game.find_by(id: params[:id])
-        render json: game, include: [:levels]
+        render json: game, include: [:levels, :library]
     end
    
     def create
