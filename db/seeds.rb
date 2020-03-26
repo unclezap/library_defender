@@ -14,7 +14,11 @@ newLibrary = Library.create(health: 1000)
 newGame.library = newLibrary
 
 levelOne = Level.create(level_number: 1)
+levelTwo = Level.create(level_number: 2)
+levelThree = Level.create(level_number: 3)
 newGame.levels << levelOne
+newGame.levels << levelTwo
+newGame.levels << levelThree
 
 newMonster = LoudChild.create(health: 50, attack_damage: 30, img: "wafa")
 levelOne.monsters << newMonster

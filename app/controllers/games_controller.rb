@@ -6,13 +6,12 @@ class GamesController < ApplicationController
     
     def show
         game = Game.find_by(id: params[:id])
-        render json: game
+        render json: game, include: [:levels]
     end
    
     def create
-        new_game = Game.create
         this_user = User.find_by(id: params[:thisUser][:id])
-        this_user.games << new_game
+        new_game = Game.create_with_everything(this_user)
         render json: new_game
     end
 end
