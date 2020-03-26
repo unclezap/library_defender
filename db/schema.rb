@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_03_22_213936) do
 
   create_table "defenders", force: :cascade do |t|
+    t.string "defender_name"
     t.integer "cost"
     t.integer "attack_damage"
     t.string "img"
@@ -54,6 +55,7 @@ ActiveRecord::Schema.define(version: 2020_03_22_213936) do
   end
 
   create_table "monsters", force: :cascade do |t|
+    t.string "monster_name"
     t.integer "health"
     t.integer "attack_damage"
     t.string "img"

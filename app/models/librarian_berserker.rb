@@ -1,0 +1,2 @@
+class LibrarianBerserker < Defender
+end

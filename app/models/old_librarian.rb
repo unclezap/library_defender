@@ -1,0 +1,2 @@
+class OldLibrarian < Defender
+end
