@@ -19,6 +19,7 @@ class GamesController < ApplicationController
         updated_game = Game.find_by(id: params[:thisGame][:id])
         updated_game.money = params[:currentMoney]
         updated_game.current_level = params[:thisGame][:current_level] + 1
+        updated_game.save
         render json: updated_game
     end
 end

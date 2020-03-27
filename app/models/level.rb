@@ -4,7 +4,8 @@ class Level < ApplicationRecord
     has_many :defenders
 
     def self.create_with_monsters(game)
-        
+        # game.current_level += 1
+        # game.save
         @level = Level.create(level_number: game.current_level)
         game.levels << @level
 
@@ -23,7 +24,7 @@ class Level < ApplicationRecord
         if @level.level_number >= 4
             DrinkCup.create_for_level(@level)
         end
-
+        
         return @level
     end
 

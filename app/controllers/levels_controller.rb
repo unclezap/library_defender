@@ -11,10 +11,8 @@ class LevelsController < ApplicationController
 
     def create
         @current_game = Game.find_by(id: params[:thisGame][:id])
-        @current_game.current_level += 1
-        byebug
+        # @current_game.current_level += 1
         level = Level.create_with_monsters(@current_game)
-        byebug
         render json: level, include: [:monsters]
     end
 end
