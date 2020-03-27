@@ -4,7 +4,7 @@ class Game < ApplicationRecord
     has_many :levels
 
     def self.create_with_everything(user)
-        @game = Game.create(money: 50, current_level: 1)
+        @game = Game.create(money: 5000, current_level: 1)
         user.games << @game
         Library.create_for_game(@game)
         Level.create_with_monsters(@game)
