@@ -13,6 +13,10 @@ class Level < ApplicationRecord
             LoudChild.create_for_level(@level)
         end
 
+        if @level.level_number >= 4
+            DrinkCup.create_for_level(@level)
+        end
+        
         if @level.level_number >= 2
             Monkey.create_for_level(@level)
         end
@@ -21,9 +25,7 @@ class Level < ApplicationRecord
             Music.create_for_level(@level)
         end
 
-        if @level.level_number >= 4
-            DrinkCup.create_for_level(@level)
-        end
+        
         
         return @level
     end
